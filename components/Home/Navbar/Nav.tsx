@@ -1,39 +1,16 @@
 "use client";
+import { navLinks } from "@/constant/constant";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { FaUserCircle } from "react-icons/fa";
 import { FaHouse } from "react-icons/fa6";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
-const navLinks = [
-  {
-    id: 1,
-    url: "#",
-    label: "Home",
-  },
-  {
-    id: 2,
-    url: "#",
-    label: "Listing",
-  },
-  {
-    id: 3,
-    url: "#",
-    label: "Property",
-  },
-  {
-    id: 4,
-    url: "#",
-    label: "Blog",
-  },
-  {
-    id: 5,
-    url: "#",
-    label: "Contact",
-  },
-];
+type Props = {
+  openNav: () => void;
+};
 
-const Nav = () => {
+const Nav = ({ openNav }: Props) => {
   const [navBg, setNavBg] = useState(false);
 
   useEffect(() => {
@@ -48,7 +25,7 @@ const Nav = () => {
   }, []);
   return (
     <div
-      className={`fixed ${navBg ? "bg-gray-800" : ""} h-[10vh] z-[100] w-full transition-all duration-200`}
+      className={`fixed ${navBg ? "bg-gray-800" : ""} h-[10vh] z-[100] w-full transition-all duration-200 bg-gray-700`}
     >
       <div className="flex items-center h-full justify-between w-[95%] sm:w-[90%] xl:w-[80%] mx-auto">
         {/* LEGO */}
@@ -79,8 +56,11 @@ const Nav = () => {
             <FaUserCircle className="w-5 h-5" />
             <p className="font-bold text-xs sm:text-base">Login / Register</p>
             {/* burger menu */}
-            <HiBars3BottomRight className="sm:w-8 sm:h-8 w-6 h-6 cursor-pointer text-white lg:hidden" />
           </div>
+          <HiBars3BottomRight
+            onClick={openNav}
+            className="sm:w-8 sm:h-8 w-6 h-6 cursor-pointer text-white lg:hidden"
+          />
         </div>
       </div>
     </div>
