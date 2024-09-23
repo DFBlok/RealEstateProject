@@ -15,7 +15,7 @@ const Hero = () => {
           Find Your Dream Home
         </h1>
         <p className="mt-4 text-center text-sm sm:text-gray-200">
-          We've more than 745,000 apartments, place and plot.
+          We&aposve more than 745,000 apartments, place and plot.
         </p>
         <div className="mt-12 w-full">
           <SearchBox />
