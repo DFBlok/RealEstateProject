@@ -1,4 +1,5 @@
 "use client";
+import { cities } from "@/data/data";
 import React from "react";
 
 import Carousel from "react-multi-carousel";
@@ -31,7 +32,9 @@ const CitySlider = () => {
     infinite
     responsive={responsive}
   >
-    <div></div>
+    {cities.map((city) => {
+      return <div key={city.id}>{/* cityslider card */}</div>;
+    })}
   </Carousel>;
 };
 
