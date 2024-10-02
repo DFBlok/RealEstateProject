@@ -4,6 +4,7 @@ import React from "react";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import CityCard from "./CityCard";
 
 const responsive = {
   desktop: {
@@ -24,18 +25,23 @@ const responsive = {
 };
 
 const CitySlider = () => {
-  return;
-  <Carousel
-    arrows={true}
-    autoPlay={true}
-    autoPlaySpeed={5000}
-    infinite
-    responsive={responsive}
-  >
-    {cities.map((city) => {
-      return <div key={city.id}>{/* cityslider card */}</div>;
-    })}
-  </Carousel>;
+  return (
+    <Carousel
+      arrows={true}
+      autoPlay={true}
+      autoPlaySpeed={5000}
+      infinite
+      responsive={responsive}
+    >
+      {cities.map((city) => {
+        return (
+          <div key={city.id}>
+            <CityCard city={city} />
+          </div>
+        );
+      })}
+    </Carousel>
+  );
 };
 
 export default CitySlider;
