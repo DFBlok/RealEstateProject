@@ -1,9 +1,8 @@
 import SectionHeading from "@/components/Helper/SectionHeading";
 import { properties } from "@/data/data";
 import React from "react";
-import { DiVim } from "react-icons/di";
+
 import PropertyCard from "./PropertyCard";
-import { propagateServerField } from "next/dist/server/lib/render-server";
 
 const Property = () => {
   return (
