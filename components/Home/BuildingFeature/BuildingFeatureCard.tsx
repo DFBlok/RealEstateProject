@@ -22,6 +22,15 @@ const BuildingFeatureCard = ({ building }: Props) => {
           height={40}
         />
       </div>
+      <div className="p-2">
+        <p className="mt-6 text-red-600 font-bold text-xl">0{building.id}</p>
+        <p className="text-lg textr-gray-700 font-bold mt-2 mb-2">
+          {building.title}
+        </p>
+        <p className="text-sm opacity-70 text-gray-700">
+          {building.description}
+        </p>
+      </div>
     </Tilt>
   );
 };
