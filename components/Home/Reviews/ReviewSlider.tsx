@@ -36,7 +36,7 @@ const ReviewSlider = () => {
       {userReviewData.map((review) => {
         return (
           <div key={review.id}>
-            <ReviewCard /* review={review} */ />
+            <ReviewCard review={review} />
           </div>
         );
       })}
