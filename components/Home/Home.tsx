@@ -4,6 +4,7 @@ import ApartmentType from "./Apartment/ApartmentType";
 import PropertyType from "./Properties/PropertyType";
 import CityProperties from "./CityProperties/CityProperties";
 import BuildingFeature from "./BuildingFeature/BuildingFeature";
+import Reviews from "./Reviews/Reviews";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <PropertyType />
       <CityProperties />
       <BuildingFeature />
+      <Reviews />
     </div>
   );
 };
