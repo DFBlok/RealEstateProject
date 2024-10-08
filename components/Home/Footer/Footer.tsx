@@ -30,6 +30,14 @@ const Footer = () => {
             <FaLinkedin className="w-6 h-6 text-blue-600" />
           </div>
         </div>
+        {/*  2nd footer */}
+        <div>
+          <h1 className="footer__heading">Popular Search</h1>
+          <p className="footer__link">Apartment For Rent</p>
+          <p className="footer__link">Apartment Low to High</p>
+          <p className="footer__link">Offices For Buy</p>
+          <p className="footer__link">Offices For Rent</p>
+        </div>
       </div>
     </div>
   );
