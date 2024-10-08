@@ -7,7 +7,7 @@ const Footer = () => {
     <div className="pt-20 pb-12 bg-black">
       <div className="w-[80%] mx-auto grid items-start grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-8 border-b-[1.5px] border-white border-opacity-20">
         {/* 1st footer part */}
-        <div>
+        <div className="md:mx-auto">
           <div className="flex items-center space-x-2">
             <div className="md:w-10 md:h-10 w-7 h-7 rounded-full bg-rose-700 text-white flex items-center justify-center flex-col">
               <FaHouse />
@@ -31,12 +31,23 @@ const Footer = () => {
           </div>
         </div>
         {/*  2nd footer */}
-        <div>
+        <div className="md:mx-auto">
           <h1 className="footer__heading">Popular Search</h1>
           <p className="footer__link">Apartment For Rent</p>
           <p className="footer__link">Apartment Low to High</p>
           <p className="footer__link">Offices For Buy</p>
           <p className="footer__link">Offices For Rent</p>
+        </div>
+        {/* 3rd footer */}
+        <div className="lg:mx-auto">
+          <h1 className="footer__heading">Quick Link</h1>
+          <p className="footer__link">Terms of use</p>
+          <p className="footer__link">Privacy Policy</p>
+          <p className="footer__link">Pricing Plans</p>
+          <p className="footer__link">Our Services</p>
+          <p className="footer__link">Contact Support</p>
+          <p className="footer__link">Careers</p>
+          <p className="footer__link">FAQs</p>
         </div>
       </div>
     </div>
