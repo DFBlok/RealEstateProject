@@ -49,7 +49,19 @@ const Footer = () => {
           <p className="footer__link">Careers</p>
           <p className="footer__link">FAQs</p>
         </div>
+        {/* 4th footer */}
+        <div className="md:mx-auto">
+          <h1 className="footer__heading">Discover</h1>
+          <p className="footer__link">Maimi</p>
+          <p className="footer__link">Los Angeles</p>
+          <p className="footer__link">Chicago</p>
+          <p className="footer__link">New York</p>
+          <p className="footer__link">China</p>
+        </div>
       </div>
+      <p className="text-center mt-4 text-base text-white opacity-70">
+        Copyright 2024 by Duwayne Blok
+      </p>
     </div>
   );
 };
