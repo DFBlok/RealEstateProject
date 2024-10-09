@@ -4,6 +4,7 @@ import "./globals.css";
 import { Roboto } from "next/font/google";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
+import ScrollToTop from "@/components/Helper/ScrollToTop";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -41,6 +42,8 @@ export default function RootLayout({
         {children}
         {/* footer */}
         <Footer />
+        {/* Scroll to top */}
+        <ScrollToTop />
       </body>
     </html>
   );
